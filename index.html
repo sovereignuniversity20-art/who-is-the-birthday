@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Who Is The Birthday?</title>
+<meta name="description" content="A birthday card. Can you guess who The Birthday is?">
+<meta property="og:title" content="Who is The Birthday??!">
+<meta property="og:description" content="Tap through, guess, and send her some love.">
+<meta name="theme-color" content="#120a0a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- COVER -->
+  <section class="screen bg-night" data-audio="" id="cover">
+    <div class="sparkles"></div>
+    <div class="content">
+      <h1 class="title bounce" data-split>Who is The Birthday??!</h1>
+      <div class="frame frame-cheetah cal-frame pop">
+        <svg class="calendar" viewBox="0 0 700 520" role="img" aria-label="October calendar with the 14th circled">
+          <rect width="700" height="520" rx="26" fill="#2f3033"/>
+          <text x="40" y="68" class="cal-month">October</text>
+          <path d="M215 40 l12 14 l12 -14z" fill="#e8e8ea"/>
+          <g class="cal-dow"></g>
+          <g class="cal-days"></g>
+          <circle class="today" cx="0" cy="0" r="30" fill="#8ab4f8"/>
+          <path class="red-circle" d="" fill="none" stroke="#c4161c" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <button class="btn btn-gold big" id="start">Tap to open 🎁</button>
+    </div>
+  </section>
+
+  <!-- 1 -->
+  <section class="screen bg-night" data-audio="audio/s1.mp3">
+    <canvas class="fireworks"></canvas>
+    <img class="skyline" src="img/skyline.svg" alt="">
+    <div class="content">
+      <p class="line" data-split>The Birthday has smooth chocolaty skin, gorgeous golden locs, and a smile that could light up the sky like the Fourth of July.</p>
+      <div class="stage">
+        <img class="cutout s1 rise" src="img/s1.webp" alt="The Birthday, smiling in a denim jacket">
+      </div>
+      <p class="who">Who is the birthday??!</p>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="screen bg-cheetah" data-audio="audio/s2.mp3">
+    <div class="content">
+      <p class="line big-line" data-split>The Birthday don’t play!</p>
+      <div class="stage duo">
+        <img class="cutout glow slide-l" src="img/s2.webp" alt="The Birthday from behind, holding an axe">
+        <img class="cutout glow slide-r" src="img/s2a.webp" alt="The Birthday with her face pixelated, not playing">
+      </div>
+      <p class="who">Who is the birthday??!</p>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="screen bg-red" data-audio="audio/s3.mp3">
+    <div class="content">
+      <p class="line" data-split>The Birthday be clowning… but don’t show her one. Eeekk!!</p>
+      <div class="stage">
+        <div class="no-clown wobble" aria-hidden="true">
+          <img src="img/clown.png" alt="">
+          <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" fill="none" stroke="#e01b24" stroke-width="9"/><line x1="19" y1="19" x2="81" y2="81" stroke="#e01b24" stroke-width="9" stroke-linecap="round"/></svg>
+        </div>
+        <div class="frame frame-leopard tilt-r pop"><img src="img/s3.webp" alt="The Birthday in a Hello Kitty filter, face blurred"></div>
+      </div>
+      <p class="who">Who is the birthday??!</p>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="screen bg-library" data-audio="audio/s4.mp3">
+    <div class="content">
+      <p class="line plaque" data-split>The Birthday is probably reading a book right now.</p>
+      <div class="stage">
+        <img class="cutout s4 rise" src="img/s4.webp" alt="The Birthday reading on her phone, eyes hidden">
+      </div>
+      <p class="who">Who is the birthday??!</p>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="screen bg-gold" data-audio="audio/s5.mp3">
+    <div class="content">
+      <p class="line dark" data-split>The Birthday is a proud mother of 4.</p>
+      <div class="stage">
+        <img class="cutout s5 rise" src="img/s5.webp" alt="Four kids with The Birthday as a silhouette in the middle">
+      </div>
+      <p class="who dark">Who is the birthday??!</p>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="screen bg-red" data-audio="audio/s6.mp3">
+    <div class="content">
+      <p class="line">The Birthday has welcomed over <span class="counter" data-to="70">0</span> humans into the world on their first birthday. <em class="woow">Woow</em></p>
+      <div class="stage">
+        <div class="frame frame-boho tilt-l pop"><img src="img/s6.webp" alt="The Birthday in a hospital gown at a birth, eyes hidden"></div>
+      </div>
+      <p class="who">Who is the birthday??!</p>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="screen bg-gallery" data-audio="audio/s7.mp3">
+    <div class="content">
+      <p class="line dark" data-split>The Birthday is fine as wine! Ooow! Some might even say she’s a work of art..</p>
+      <div class="stage duo gallery">
+        <img class="cutout s7 slide-l" src="img/s7.webp" alt="Silhouette of The Birthday on a beach swing">
+        <div class="frame frame-gilt slide-r"><img src="img/s7a.webp" alt="A painted portrait of The Birthday"></div>
+      </div>
+      <p class="who">Who is the birthday??</p>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="screen bg-cheetah" data-audio="audio/s8.mp3" data-gate="message">
+    <div class="content">
+      <p class="line" data-split>If you think you know “The Birthday” send her some love</p>
+      <form class="frame frame-boho msg-card pop" id="msgForm" autocomplete="off">
+        <div class="msg-inner">
+          <label for="msgText">Send a message to The Birthday for her special day</label>
+          <textarea id="msgText" maxlength="400" rows="4" placeholder="Send a message to The Birthday for her special day" required></textarea>
+          <input id="msgName" maxlength="40" placeholder="Your name (optional)">
+          <a class="btn btn-cash" href="https://cash.app/$DeedeeHa" target="_blank" rel="noopener">💸 Cash App&nbsp;<b>$DeedeeHa</b></a>
+          <button class="btn btn-gold" id="proceed" type="submit" disabled>Proceed ➜</button>
+          <p class="hint" id="msgHint">Leave a message to continue</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section class="screen bg-reveal" data-audio="audio/song.mp3" id="reveal">
+    <canvas class="confetti"></canvas>
+    <div class="content">
+      <h1 class="title bounce" data-split>Deedee is The Birthday!!!</h1>
+      <div class="collage"></div>
+    </div>
+    <div class="bubbles" aria-live="polite"></div>
+    <button class="btn btn-gold replay" id="replay" aria-label="Play the song again">🎶 Play song</button>
+  </section>
+
+</div>
+
+<nav class="nav">
+  <button class="nav-btn" id="back" aria-label="Back">‹</button>
+  <div class="dots"></div>
+  <button class="nav-btn" id="next" aria-label="Next">›</button>
+</nav>
+<button class="mute" id="mute" aria-label="Mute sound">🔊</button>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
