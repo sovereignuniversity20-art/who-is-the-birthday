@@ -132,7 +132,7 @@ button { font: inherit; cursor: pointer; }
 /* ---------- Screen 1 ---------- */
 .fireworks { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; }
 .skyline { position: absolute; left: calc(50% - 330px); bottom: 0; width: 780px; max-width: none; height: auto; z-index: 1; pointer-events: none; }
-.stage .cutout.s1 { position: absolute; bottom: -78px; right: -18px; height: min(50%, 290px); width: auto; filter: drop-shadow(0 0 22px rgba(242,193,78,.35)); }
+.stage .cutout.s1 { position: absolute; bottom: 14%; left: 0; right: 0; margin: 0 auto; height: min(52%, 300px); width: auto; filter: drop-shadow(0 0 22px rgba(242,193,78,.35)); -webkit-mask-image: linear-gradient(#000 82%, transparent); mask-image: linear-gradient(#000 82%, transparent); }
 
 /* ---------- Cutouts ---------- */
 .cutout { max-height: 100%; width: auto; }
@@ -140,13 +140,13 @@ button { font: inherit; cursor: pointer; }
 .duo { gap: 10px; align-items: flex-end; }
 .duo > * { min-width: 0; }
 .duo > .cutout { max-height: 100%; max-width: 48%; object-fit: contain; }
-.stage .cutout.s4 { position: absolute; bottom: -78px; width: min(100%, 520px); max-width: none; max-height: none; filter: drop-shadow(0 -6px 24px rgba(0,0,0,.5)); }
+.stage .cutout.s4 { position: absolute; bottom: -78px; left: -16px; width: min(100%, 520px); max-width: none; max-height: none; filter: drop-shadow(0 -6px 24px rgba(0,0,0,.5)); }
 .stage .cutout.s5 { max-width: 100%; filter: drop-shadow(0 12px 18px rgba(80,30,0,.35)); }
 
 /* ---------- Screen 3 ---------- */
 .stage > .frame-leopard { max-width: 84%; z-index: 1; }
-.no-clown { position: absolute; top: 2%; right: 0; width: 112px; height: 112px; z-index: 0; }
-.no-clown img { position: absolute; inset: 16px; width: 80px; height: 80px; image-rendering: pixelated; border-radius: 50%; background: #fff3; }
+.no-clown { position: absolute; top: 4%; left: 2%; width: 78px; height: 78px; z-index: 2; filter: drop-shadow(0 4px 8px rgba(0,0,0,.45)); }
+.no-clown img { position: absolute; inset: 11px; width: 56px; height: 56px; image-rendering: pixelated; border-radius: 50%; background: #fff3; }
 .no-clown svg { position: absolute; inset: 0; }
 .active .wobble { animation: wobble 1.2s ease-in-out infinite; }
 @keyframes wobble { 0%,100% { transform: rotate(-10deg); } 50% { transform: rotate(10deg) scale(1.05); } }
