@@ -3,10 +3,10 @@
 // visitors see their own message plus anything hard-coded in messages.json.
 window.CARD_CONFIG = {
   // The form's "formResponse" URL, e.g. https://docs.google.com/forms/d/e/XXXX/formResponse
-  formResponseUrl: "",
+  formResponseUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfzRbCWQQIWiuSmur-rnEZwwv39N7icMnwfyH0wYxUhWURhgA/formResponse",
   // Field IDs from the form's pre-filled link, e.g. "entry.123456789"
-  messageEntry: "",
-  nameEntry: "",
+  messageEntry: "entry.107149164",
+  nameEntry: "entry.1191617713",
   // The response sheet published to the web as CSV, e.g. https://docs.google.com/spreadsheets/d/e/XXXX/pub?output=csv
-  sheetCsvUrl: ""
+  sheetCsvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTJBNyy807xWJykJDB98lQv3xW_7szlrj3gnh8mAsgt4R0foAGgkRxhevMFGgsw8zPeBr5uBz0rrOCy/pub?gid=2122647416&single=true&output=csv"
 };
